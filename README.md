@@ -9,11 +9,11 @@
   ; Follow the Yocto Project official documentation to set up and configure your host machine to be compatible with BitBake.
 
 ##Step 1: Set Up Environment:  
-   1. git clone repository:
+  #1. git clone repository:
        The ssh key registration is needed after making the ssh key. ( Refer to the  https://docs.github.com/ko/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  )  
        ex)  git clone git@github.com:gimpo-james/openvino_intel.git
 
-   2. Set up the OpenEmbedded build environment:
+  #2. Set up the OpenEmbedded build environment:
       cd code 
       source poky/oe-init-build-env
 
