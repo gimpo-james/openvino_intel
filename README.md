@@ -10,6 +10,7 @@
 #System Requirements
   ; Follow the Yocto Project official documentation to set up and configure your host machine to be compatible with BitBake.
 
+
 ##Step 1: Set Up Environment:  
   1. git clone repository:
        The ssh key registration is needed after making the ssh key. ( Refer to the  https://docs.github.com/ko/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  )  
@@ -18,7 +19,9 @@
   2. Set up the OpenEmbedded build environment:
   
       cd code 
+
       source poky/oe-init-build-env
+
 
 ##Step 2: Build a Yocto Image with OpenVINO Packages:
     ; Run BitBake to build your image with OpenVINO packages. For example, to build the minimal image, run the following command:
@@ -27,6 +30,7 @@
 
     #Note
     #For validation/testing/reviewing purposes, you may consider using the nohup command and ensure that your vpn/ssh connection remains uninterrupted.
+
 
 ##Step 3: Verify the Yocto Image
 
@@ -48,11 +52,11 @@
 
 ##Additional Resources
 
-    Troubleshooting Guide -https://docs.openvino.ai/2023.0/openvino_docs_get_started_guide_troubleshooting_issues.html#yocto-install-issues
-    Yocto Project - official documentation webpage - https://docs.yoctoproject.org/
-    BitBake Tool - https://docs.yoctoproject.org/bitbake/
-    Poky - https://git.yoctoproject.org/poky
-    Meta-intel - https://git.yoctoproject.org/meta-intel/tree/README
-    Meta-openembedded - http://cgit.openembedded.org/meta-openembedded/tree/README
-    Meta-clang - https://github.com/kraj/meta-clang/tree/master/#readme
+    -.Troubleshooting Guide -https://docs.openvino.ai/2023.0/openvino_docs_get_started_guide_troubleshooting_issues.html#yocto-install-issues
+    -.Yocto Project - official documentation webpage - https://docs.yoctoproject.org/
+    -.BitBake Tool - https://docs.yoctoproject.org/bitbake/
+    -.Poky - https://git.yoctoproject.org/poky
+    -.Meta-intel - https://git.yoctoproject.org/meta-intel/tree/README
+    -.Meta-openembedded - http://cgit.openembedded.org/meta-openembedded/tree/README
+    -.Meta-clang - https://github.com/kraj/meta-clang/tree/master/#readme
 
