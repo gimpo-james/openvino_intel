@@ -30,7 +30,7 @@
 
       bitbake-layers add-layer ../meta-clang
 
-##ps.  To make sure below layers using  bitbake-layers show-layers
+        ps.  To make sure below layers using  " bitbake-layers show-layers "
 
         |  layer                 path                                       priority ;
         | =======================================================================    ;
