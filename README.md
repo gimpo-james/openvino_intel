@@ -22,6 +22,14 @@
 
       source poky/oe-init-build-env
 
+      bitbake-layers add-layer ../meta-intel
+
+      bitbake-layers add-layer ../meta-openembedded/meta-oe
+
+      bitbake-layers add-layer ../meta-openembedded/meta-python
+
+      bitbake-layers add-layer ../meta-clang
+
 
 ##Step 2: Build a Yocto Image with OpenVINO Packages:
     ; Run BitBake to build your image with OpenVINO packages. For example, to build the minimal image, run the following command:
