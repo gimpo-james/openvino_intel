@@ -18,12 +18,17 @@
 
   2. Set up the OpenEmbedded build environment:
   
-      cd code   ; 
-      source poky/oe-init-build-env  ; 
-      bitbake-layers add-layer ../meta-intel  ; 
-      bitbake-layers add-layer ../meta-openembedded/meta-oe  ; 
-      bitbake-layers add-layer ../meta-openembedded/meta-python ; 
-      bitbake-layers add-layer ../meta-clang ; 
+      cd code    
+
+      source poky/oe-init-build-env 
+
+      bitbake-layers add-layer ../meta-intel 
+
+      bitbake-layers add-layer ../meta-openembedded/meta-oe
+
+      bitbake-layers add-layer ../meta-openembedded/meta-python
+
+      bitbake-layers add-layer ../meta-clang
 
 ##ps.  To make sure below layers using  " bitbake-layers show-layers "
 
