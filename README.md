@@ -30,7 +30,21 @@
 
       bitbake-layers add-layer ../meta-clang
 
+	  ps.  To make sure below layers using  bitbake-layers show-layers
 
+        |  layer                 path                                                                    priority
+        | ========================================================================================================
+        | core                   ~/code/poky/meta                                5
+        | yocto                  ~/code/poky/meta-poky                           5
+        | yoctobsp               ~/code/poky/meta-yocto-bsp                      5
+        | intel                  ~/code/meta-intel                               5
+        | openembedded-layer     ~/code/meta-openembedded/meta-oe                5
+        | meta-python            ~/code/meta-openembedded/meta-python            5
+        | clang-layer            ~/code/meta-clang                               7
+
+
+
+		
 ##Step 2: Build a Yocto Image with OpenVINO Packages:
     ; Run BitBake to build your image with OpenVINO packages. For example, to build the minimal image, run the following command:
 
